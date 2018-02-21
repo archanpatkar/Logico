@@ -1,2 +1,2 @@
 # Logico
-A Language based on Boolean Algebra
+### A Language based on Propositional Calculus Ω
