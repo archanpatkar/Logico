@@ -4,7 +4,7 @@
 ## Introduction 
 
 ### `Propositional Calculus` or zeroth-order logic,
-##### Is the branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
+#### Is the branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
 
 
 ### Truth Values in Logico
