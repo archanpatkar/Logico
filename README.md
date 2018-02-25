@@ -38,16 +38,16 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### Prove that for Every value of A and B it Evaluates to T
 
 #### Case 1 A:T and B:T
-#### `( ( ( T > T ) ^ T ) > T )` evaluates to `T`
+ ```( ( ( T > T ) ^ T ) > T )``` evaluates to `T`
 
 #### Case 2 A:T and B:F
-#### `( ( ( T > F ) ^ T ) > F )` evaluates to `T`
+```( ( ( T > F ) ^ T ) > F )``` evaluates to `T`
 
 #### Case 3 A:F and B:T
-#### `( ( ( F > T ) ^ F ) > T )` evaluates to `T`
+```( ( ( F > T ) ^ F ) > T )``` evaluates to `T`
 
 #### Case 4 A:F and B:F
-#### `( ( ( F > F ) ^ F ) > F )` evaluates to `T`
+```( ( ( F > F ) ^ F ) > F )``` evaluates to `T`
 
 ### This is an Example of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
 
