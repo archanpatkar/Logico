@@ -31,21 +31,27 @@
 #### This Expression will evaluate to `F`
 
 
-### Examples
+## Examples
 
-#### if ( (if A then B) and A ) then B
-##### Prove that for Every value of A and B it Evaluates to T
+### if ( (if A then B) and A ) then B ( ( ( A > B ) ^ A ) > B )
+#### Prove that for Every value of A and B it Evaluates to T
 
-##### Case 1 A:T and B:T
+#### Case 1 A:T and B:T
 ### `( ( ( T > T ) ^ T ) > T )` evaluates to `T`
 
-##### Case 2 A:T and B:F
+#### Case 2 A:T and B:F
 ### `( ( ( T > F ) ^ T ) > F )` evaluates to `T`
 
-##### Case 3 A:F and B:T
+#### Case 3 A:F and B:T
 ### `( ( ( F > T ) ^ F ) > T )` evaluates to `T`
 
-##### Case 4 A:F and B:F
+#### Case 4 A:F and B:F
 ### `( ( ( F > F ) ^ F ) > F )` evaluates to `T`
 
 ### This is an Example of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
+
+
+## Resources
+[Wiki](https://en.wikipedia.org/wiki/Propositional_calculus)
+[Introduction](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_propositional_logic.htm)
+[Implication and Biconditional](http://www.math.niu.edu/~richard/Math101/implies.pdf)
