@@ -74,6 +74,18 @@ function eval(ast)
         const cond2 = eval(ast[2]);
         return cond1 || cond2;
     }
+    else if(ast[1] == ">")
+    {
+        const cond1 = eval(ast[0]);
+        const cond2 = eval(ast[2]);
+        return (!cond1) || cond2;
+    }
+    else if(ast[1] == "=")
+    {
+        const cond1 = eval(ast[0]);
+        const cond2 = eval(ast[2]);
+        return cond1 == cond2;
+    }
 }
 
 function convert(out)
