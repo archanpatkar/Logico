@@ -17,10 +17,10 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 ### Logical Connectives in Logico
 | Logical Connectives  	  | Operator 	| Equivalent in English       |
-|------------------------	|----------	|---------------------------	|
+|------------------------	|----------	|---------------------------	 |
 | Negation               	| -A       	| not A                       |
 | Conjunction            	| A ^ B    	| A and B                    	|
-| Disjunction            	| A v B    	| A or B                    	|
+| Disjunction            	| A v B    	| A or B                    	 |
 | Implication            	| A > B    	| if A then B                 |
 | Biconditional          	| A = B    	| A if and only if B          |
 
@@ -32,7 +32,7 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### This Expression will evaluate to `F`
 
 
-## Examples
+## Example
 
 ### if ( (if A then B) and A ) then B 
 ### ( ( ( A > B ) ^ A ) > B )
@@ -50,7 +50,7 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### Case 4 A:F and B:F
 ```( ( ( F > F ) ^ F ) > F )``` evaluates to `T`
 
-### This is an Example of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
+### This is an illustration of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
 
 
 ## Resources
