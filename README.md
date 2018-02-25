@@ -4,7 +4,7 @@
 ## Introduction 
 
 ### `Propositional Calculus Ω` or `zeroth-order logic`,
-#### Is a branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
+Is a branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
 
 
 ### Truth Values in Logico
@@ -38,21 +38,21 @@
 #### Prove that for Every value of A and B it Evaluates to T
 
 #### Case 1 A:T and B:T
-### `( ( ( T > T ) ^ T ) > T )` evaluates to `T`
+#### `( ( ( T > T ) ^ T ) > T )` evaluates to `T`
 
 #### Case 2 A:T and B:F
-### `( ( ( T > F ) ^ T ) > F )` evaluates to `T`
+#### `( ( ( T > F ) ^ T ) > F )` evaluates to `T`
 
 #### Case 3 A:F and B:T
-### `( ( ( F > T ) ^ F ) > T )` evaluates to `T`
+#### `( ( ( F > T ) ^ F ) > T )` evaluates to `T`
 
 #### Case 4 A:F and B:F
-### `( ( ( F > F ) ^ F ) > F )` evaluates to `T`
+#### `( ( ( F > F ) ^ F ) > F )` evaluates to `T`
 
 ### This is an Example of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
 
 
 ## Resources
-[Wiki](https://en.wikipedia.org/wiki/Propositional_calculus)
-[Introduction](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_propositional_logic.htm)
-[Implication and Biconditional](http://www.math.niu.edu/~richard/Math101/implies.pdf)
+[Wiki](https://en.wikipedia.org/wiki/Propositional_calculus)<br>
+[Introduction](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_propositional_logic.htm)<br>
+[Implication and Biconditional](http://www.math.niu.edu/~richard/Math101/implies.pdf)<br>
