@@ -33,7 +33,8 @@
 
 ## Examples
 
-### if ( (if A then B) and A ) then B ( ( ( A > B ) ^ A ) > B )
+### if ( (if A then B) and A ) then B 
+### ( ( ( A > B ) ^ A ) > B )
 #### Prove that for Every value of A and B it Evaluates to T
 
 #### Case 1 A:T and B:T
