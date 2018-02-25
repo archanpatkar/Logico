@@ -14,7 +14,7 @@
 | false       | F      |
 
 
-### Logical Connectivites in Logico
+### Logical Connectives in Logico
 | Logical Connectives  	  | Operator 	| Equivalent in English       |
 |------------------------	|----------	|---------------------------	|
 | Negation               	| -A       	| not A                       |
@@ -30,3 +30,22 @@
 ``` 
 #### This Expression will evaluate to `F`
 
+
+### Examples
+
+#### if ( (if A then B) and A ) then B
+##### Prove that for Every value of A and B it Evaluates to T
+
+##### Case 1 A:T and B:T
+### `( ( ( T > T ) ^ T ) > T )` evaluates to `T`
+
+##### Case 2 A:T and B:F
+### `( ( ( T > F ) ^ T ) > F )` evaluates to `T`
+
+##### Case 3 A:F and B:T
+### `( ( ( F > T ) ^ F ) > T )` evaluates to `T`
+
+##### Case 4 A:F and B:F
+### `( ( ( F > F ) ^ F ) > F )` evaluates to `T`
+
+### This is an Example of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
