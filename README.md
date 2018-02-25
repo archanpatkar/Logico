@@ -4,7 +4,7 @@
 ## Introduction 
 
 ### `Propositional Calculus Ω` or `zeroth-order logic`,
-#### Is the branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
+#### Is a branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
 
 
 ### Truth Values in Logico
@@ -15,7 +15,7 @@
 
 
 ### Logical Connectivites in Logico
-| Logical Connectives  	  | Operator 	| Equivalent in Programming 	|
+| Logical Connectives  	  | Operator 	| Equivalent in English       |
 |------------------------	|----------	|---------------------------	|
 | Negation               	| -A       	| not A                       |
 | Conjunction            	| A ^ B    	| A and B                    	|
@@ -28,5 +28,5 @@
 ``` 
 ( ( -(T ^ F) v (-F) ) ^ F ) 
 ``` 
-This Expression will evaluate to `F`
+#### This Expression will evaluate to `F`
 
