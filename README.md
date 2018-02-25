@@ -3,7 +3,7 @@
 
 ## Introduction 
 
-### `Propositional Calculus Ω` or `zeroth-order logic`,
+### `Propositional Calculus` or `zeroth-order logic`,
 Is a branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
 
 
