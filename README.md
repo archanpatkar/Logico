@@ -54,6 +54,8 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 
 ## Resources
+For Learning Propostional Calculus
+
 [Wiki](https://en.wikipedia.org/wiki/Propositional_calculus)<br>
 [Introduction](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_propositional_logic.htm)<br>
 [Implication and Biconditional](http://www.math.niu.edu/~richard/Math101/implies.pdf)<br>
