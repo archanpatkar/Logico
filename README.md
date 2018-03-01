@@ -32,6 +32,13 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### This Expression will evaluate to `F`
 
 
+### In Logico Everything is an Expression therefore Everything has to be in `(...)`
+
+#### You can also write multiple expressions inside an expression and the last expression will be the final evaluation
+### `( (T) (T ^ T) (T) (F) )` => final evaluation will be `F`
+
+
+
 ## Example
 
 ### if ( (if A then B) and A ) then B 
