@@ -3,8 +3,6 @@
 ### A Language based on [Propositional Calculus Ω](https://en.wikipedia.org/wiki/Propositional_calculus)
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
 
-<br>
-
 ## Installation 
 ### `npm install -g logico`
 
