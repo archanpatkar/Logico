@@ -4,6 +4,11 @@
 
 <br>
 
+## Installation 
+### `npm install -g logico`
+
+<br>
+
 ## Introduction 
 
 ### `Propositional Calculus` or `zeroth-order logic`,
