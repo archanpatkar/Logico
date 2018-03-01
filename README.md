@@ -61,11 +61,11 @@ Variables are Lazily Evaluated
 <br>
 
 ## Examples
+> You can try this in the repl
 
 #### if ( (if A then B) and A ) then B 
 #### Prove that for Every value of A and B it Evaluates to T
 
-> You can try this in the repl
 ```
 ( e: ( ( ( A > B ) ^ A ) > B ) )
 
