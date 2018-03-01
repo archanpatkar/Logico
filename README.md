@@ -50,6 +50,21 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 ``` 
 #### Enclosing Expression will evaluate to `T`
 
+<br>
+
+## Variables 
+
+### In Logico Variables can Store Expressions and Variables are Expressions
+
+### Variables are Lazily Evaluated
+
+```
+( A: T )
+
+( B: (T ^ F = F ^ T) )
+
+( A v B )
+```
 
 <br>
 <br>
