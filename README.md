@@ -3,7 +3,6 @@
 ### A Language based on [Propositional Calculus Ω](https://en.wikipedia.org/wiki/Propositional_calculus)
 
 <br>
-<br>
 
 ## Introduction 
 
@@ -35,8 +34,6 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### This Expression will evaluate to `F`
 
 <br>
-<br>
-
 
 ## Composite Expressions
 
@@ -51,10 +48,8 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 <br>
 <br>
-<br>
-<br>
 
-## Example
+## Examples
 
 ### if ( (if A then B) and A ) then B 
 ### ( ( ( A > B ) ^ A ) > B )
