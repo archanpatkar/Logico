@@ -59,11 +59,9 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 ### Variables are Lazily Evaluated
 
 ```
-( A: T )
-
-( B: (T ^ F = F ^ T) )
-
-( A v B )
+(A: T)
+(B: (T ^ F = F ^ T))
+(A v B)
 ```
 
 <br>
