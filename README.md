@@ -2,6 +2,8 @@
 ![node](https://img.shields.io/node/v/passport.svg?style=for-the-badge) ![apm](https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge)
 ### A Language based on [Propositional Calculus Ω](https://en.wikipedia.org/wiki/Propositional_calculus)
 
+
+
 ## Introduction 
 
 ### `Propositional Calculus` or `zeroth-order logic`,
@@ -32,15 +34,21 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### This Expression will evaluate to `F`
 
 
+
+
 ## Composite Expressions
 
-### In Logico Everything is an Expression therefore Everything has to be in `(...)`
+### In Logico Everything is an Expression therefore Everything has to be inside `(...)` brackets
 
-### You can also write multiple expressions inside an expression and the last expression will be the final evaluation
+### You can also write multiple expressions inside an expression and the last expression will be the final evaluation of the enclosing expression
 ```
 ( (T) (F ^ T) (F) (T) )
 ``` 
 #### This Expression will evaluate to `T`
+
+
+
+
 
 
 ## Example
