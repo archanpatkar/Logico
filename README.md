@@ -29,11 +29,11 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 | Biconditional          	| A = B    	| A if and only if B          |
 
 
-### In Logico you can write Propsitional Expressions and Evaluate them
+In Logico you can write Propsitional Expressions and Evaluate them
 ``` 
 ( ( -(T ^ F) v (-F) ) ^ F ) 
 ``` 
-#### This Expression will evaluate to `F`
+This Expression will evaluate to `F`
 
 <br>
 
