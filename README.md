@@ -6,8 +6,6 @@
 ## Installation 
 ### `npm install -g logico`
 
-<br>
-
 ## Introduction 
 
 ### `Propositional Calculus` or `zeroth-order logic`,
@@ -53,9 +51,9 @@ Enclosing Expression will evaluate to `T`
 
 ## Variables 
 
-### In Logico Variables can Store Expressions and Variables are Expressions
+In Logico Variables can Store Expressions and Variables are Expressions
 
-### Variables are Lazily Evaluated
+Variables are Lazily Evaluated
 
 ```
 (A: T)
