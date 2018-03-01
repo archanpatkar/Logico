@@ -41,7 +41,7 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 ### You can also write multiple expressions inside an expression and the last expression will be the final evaluation of the enclosing expression
 ```
-( (T) (F ^ T) (F) (T) )
+( (-T) (F ^ T) (F) (T) )
 ``` 
 #### Enclosing Expression will evaluate to `T`
 
