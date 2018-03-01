@@ -35,8 +35,6 @@ In Logico you can write Propsitional Expressions and Evaluate them
 ``` 
 This Expression will evaluate to `F`
 
-<br>
-
 ## Composite Expressions
 
 In Logico Everything is an Expression therefore Everything has to be inside `(...)` brackets
@@ -46,8 +44,6 @@ You can also write multiple expressions inside an expression and the last expres
 ( (-T) (F ^ T) (F) (T) )
 ``` 
 Enclosing Expression will evaluate to `T`
-
-<br>
 
 ## Variables 
 
