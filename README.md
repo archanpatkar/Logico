@@ -2,7 +2,8 @@
 ![node](https://img.shields.io/node/v/passport.svg?style=for-the-badge) ![apm](https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge)
 ### A Language based on [Propositional Calculus Ω](https://en.wikipedia.org/wiki/Propositional_calculus)
 
-
+<br>
+<br>
 
 ## Introduction 
 
@@ -33,7 +34,8 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 ``` 
 #### This Expression will evaluate to `F`
 
-
+<br>
+<br>
 
 
 ## Composite Expressions
@@ -47,9 +49,10 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 #### This Expression will evaluate to `T`
 
 
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 ## Example
 
