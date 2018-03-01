@@ -43,7 +43,7 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 ```
 ( (T) (F ^ T) (F) (T) )
 ``` 
-#### This Expression will evaluate to `T`
+#### Enclosing Expression will evaluate to `T`
 
 
 <br>
