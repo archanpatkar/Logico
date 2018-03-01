@@ -62,21 +62,25 @@ Variables are Lazily Evaluated
 
 ## Examples
 
-### if ( (if A then B) and A ) then B 
-### ( ( ( A > B ) ^ A ) > B )
+#### if ( (if A then B) and A ) then B 
 #### Prove that for Every value of A and B it Evaluates to T
 
-#### Case 1 A:T and B:T
- ```( ( ( T > T ) ^ T ) > T )``` evaluates to `T`
+> You can try this in the repl
+```
+( e: ( ( ( A > B ) ^ A ) > B ) )
 
-#### Case 2 A:T and B:F
-```( ( ( T > F ) ^ T ) > F )``` evaluates to `T`
+( ( A : T ) ( B : T ) )
+(e)
 
-#### Case 3 A:F and B:T
-```( ( ( F > T ) ^ F ) > T )``` evaluates to `T`
+( ( A : F ) ( B : T ) )
+(e)
 
-#### Case 4 A:F and B:F
-```( ( ( F > F ) ^ F ) > F )``` evaluates to `T`
+( ( A : T ) ( B : F ) )
+(e)
+
+( ( A : F ) ( B : F ) )
+(e)
+```
 
 ### This is an illustration of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
 
