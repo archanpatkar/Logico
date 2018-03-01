@@ -43,13 +43,13 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 ## Composite Expressions
 
-### In Logico Everything is an Expression therefore Everything has to be inside `(...)` brackets
+In Logico Everything is an Expression therefore Everything has to be inside `(...)` brackets
 
-### You can also write multiple expressions inside an expression and the last expression will be the final evaluation of the enclosing expression
+You can also write multiple expressions inside an expression and the last expression will be the final evaluation of the enclosing expression
 ```
 ( (-T) (F ^ T) (F) (T) )
 ``` 
-#### Enclosing Expression will evaluate to `T`
+Enclosing Expression will evaluate to `T`
 
 <br>
 
