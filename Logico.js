@@ -8,7 +8,9 @@ const debug = false; // true for logs
 // ******************************************************************
 
 // TEST ************************************************************
-// For Testing the code after update for fixes
+// For Testing the code after updates and fixes
+// Also Test when rolling out even the most minor changes
+// (Event if you add an Semicolon!) -> TEST TEST TEST
 const test = false; // true for testing
 // *****************************************************************
 
@@ -22,72 +24,125 @@ const syntax = ["-","v","^","(",")",":","T","F",">","="];
 
 
 // ############################################################################
-//                                PARSER                                      #
+//                          TOKENIZER AND PARSER                              #
 // ############################################################################
 
+// TOKENIZER ************************************************************
 function tokenize(string)
 {
-    return string.split("");
+    return string.split(""); // Converts the Program to an Array of Chars
+    // After this parser will analyze using this Array of Chars
 }
+// **********************************************************************
 
+// WRAPPER ************************************************************
 function parse(string)
 {
-    return _parse(tokenize(string));
+    return _parse(tokenize(string)); // This is a simple wrapper function
+    // parse function acts as functional composer
+    // which pipes tokenize |> _parse
 }
+// ********************************************************************
 
+// PARSER *************************************************************
+// Main Parser Code which Creates a List <-> AST ( LISP STYLE )
+// NOTE: THIS IS A RECURSIVE PARSER
 function _parse(tokens)
 {
-    if(tokens === undefined ||  tokens.length === undefined || tokens === "" || tokens === " " || tokens === "\n") return;
+    // ERROR CASES ************************************************************
+    // Not All Cases are Covered
+    // More Scenarios to be Added
+    if(tokens === undefined ||  tokens.length === undefined)
+    {
+      // Throwing an Error if tokens undefined
+      throw Error("No Code!");
+    }
     else if(tokens.length == 0)
     {
         if(debug)
         {
             console.log(tokens);
         }
+        // Throwing an Error if tokens has no chars
         throw Error("Unexpected EOF");
     }
-    let token = tokens.shift();
+    // ************************************************************************
+    //
+    // CHAR EXTRACTION ********************************************************
+    let token = tokens.shift(); // Poping the first token
+    // ************************************************************************
+    //
+    // IGNORE CASE ************************************************************
+    // Ignoring Whitespace
     if(token == "" || token == " " || token == "\n") return;
+    // ************************************************************************
+    //
+    // EXPRESSION CASE ********************************************************
+    // Parsing Expression using this case
     else if(token == "(")
     {
+        // Creating a Parent List
         const context = [];
+        // Identifying and Replacing Multi Char Variables
         tokens = detect_variables(tokens);
         if(debug)
         {
             console.log(tokens);
         }
+        // LOOP + RECURSION
+        // Looping until top is not ")" and parsing the tokens everytime
         while(tokens[0] != ")")
         {
-            context.push(_parse(tokens));
+            context.push(_parse(tokens)); // Recursive Call
         }
+        // Popping ")" from the tokens
         tokens.shift();
+        // Returning the List or Parent Expression Node
         return context;
     }
+    // ************************************************************************
+    //
+    // ERROR CASE *************************************************************
+    // For Stray ")" Brackets
     else if(token == ")")
     {
         if(debug)
         {
             console.log(tokens);
         }
+        // Throwing an Error if found that there is a extra or stray ")"
         throw Error("Unexpected ')'");
     }
+    // ************************************************************************
+    //
+    // SYNTAX LIST CASE *******************************************************
     else if (syntax.indexOf(token) >= 0)
     {
         return value(token);
+        // Converts Logico Value to Boolean Value
+        // Or it returns the symbol if it is a Valid Operator
     }
+    // ************************************************************************
+    //
+    // VARIABLE CASE **********************************************************
+    // Detecting Variable
+    // Checking if the Variable does not contain reserved Charactes
     else if (!(syntax.indexOf(token) >= 0))
     {
-        if(token.length >= 1)
+        // Single Char Var
+        if(token.length == 1)
         {
-            if(debug) console.log("Small Token => " + token);
+            if(debug) console.log("Single Character => " + token);
             return token;
         }
+        // Multichar Var
         else
         {
             if(debug)
             {
                 console.log(tokens);
             }
+            // Looping Until Found a Reserved Char or Whitespace
             const var_name = [];
             while( !(syntax.indexOf(token) >= 0) && token != " " )
             {
@@ -99,11 +154,16 @@ function _parse(tokens)
             {
                 console.log(var_name);
             }
+            // Joining the individual chars into one string and returning it
+            // This is the Multichar Variable Name
             return var_name.join("");
         }
     }
+    // ************************************************************************
 }
+//*********************************************************************
 
+// DETECTING MULTI CHAR VAR IN EXPRESSIONS ************************************
 function detect_variables(tokens)
 {
     const new_tokens = [];
@@ -154,7 +214,7 @@ function detect_variables(tokens)
     if(debug) console.log(new_tokens);
     return new_tokens;
 }
-
+// ****************************************************************************
 
 // OPERATOR AND VALUE PARSER ************************************************************
 //  Logico Values -> Boolean (Javascript)
@@ -220,7 +280,8 @@ function eval(ast,env)
     else if(ast[1] == "^")
     {
         // Conjunction in Propositional Calculus is Equivalent to && in programming
-        // It checks that does both conditions evaluate to true then the it will return true
+        // It checks that does both conditions evaluate to true
+        // then only it will return true
         //   -----------
         // | TRUTH TABLE |
         //   -----------
@@ -422,22 +483,32 @@ function expand(exp,env)
     {
         for(let e in exp)
         {
-        //     if(Array.isArray(exp[e][0])) // This Logic did not Expand N Nested Variable Expressions
-        //     {
-        //         exp = expand(e,env);     // ONLY went 1 Level Deep
-        //     }
-        //     else if(exp[e][1] == ":")
-        //     {
-        //         eval(exp[e],env);
-        //         exp[e] = exp[e][0];
-        //     }
-            exp[e] = expand(exp[e],env); // This Updated Version can Expand N Nested Variable Expressions
+            // DEPRECATED ************************************************************
+            //     if(Array.isArray(exp[e][0]))
+            //     {
+            //         exp = expand(e,env);     // ONLY went 1 Level Deep
+            //     }
+            //     else if(exp[e][1] == ":")
+            //     {
+            //         eval(exp[e],env);
+            //         exp[e] = exp[e][0];
+            //     }
+            // This Logic did not Expand N Nested Variable Expressions
+            // ************************************************************************
+
+            // RECURSIVE DECENT ************************************************************
+            exp[e] = expand(exp[e],env);
+            // This Updated Version can Expand N Nested Variable Expressions
             // This is a Recursive Solution for the PROBLEM but very TIME INTENSIVE!
+            // *****************************************************************************
         }
     }
     else
     {
+        // EXPRESSION EXPANSION ************************************************************
         exp = atom_expand(exp,env);
+        // This is Done when a Variable Defination found in Another Variable Defination while Recursion
+        // *********************************************************************************
     }
     return exp;
     // **********************************************************************************
@@ -446,7 +517,8 @@ function expand(exp,env)
 function atom_expand(exp,env)
 {
     // ATOM EXPAND ************************************************************
-    // This Expands A Single Variable Evaluates the Variable and Returns the Symbol or Variable Name
+    // This Expands A Single Variable Evaluates the Variable and
+    // Returns the Symbol or Variable Name
     // ( A : T ) => atom_expand => A
     if(exp[1] == ":")
     {
@@ -457,7 +529,12 @@ function atom_expand(exp,env)
     // ************************************************************************
 }
 
-// TESTING CODE ************************************************************
+
+// ############################################################################
+//                             TESTS                                          #
+// ############################################################################
+
+// IF TEST FLAG IS TRUE ************************************************************
 if(test)
 {
     const env = {}
@@ -527,7 +604,7 @@ if(test)
     console.log( convert( eval( parse("( F = T )") ) ));
     console.log( convert( eval( parse("( F = F )") ) ));
 }
-// ************************************************************************
+// *********************************************************************************
 
 
 // EXPORTS **************************************************
