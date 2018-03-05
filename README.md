@@ -70,15 +70,19 @@ Variables are Lazily Evaluated
 ( e: ( ( ( A > B ) ^ A ) > B ) )
 
 ( ( A : T ) ( B : T ) )
+
 (e)
 
 ( ( A : F ) ( B : T ) )
+
 (e)
 
 ( ( A : T ) ( B : F ) )
+
 (e)
 
 ( ( A : F ) ( B : F ) )
+
 (e)
 ```
 
