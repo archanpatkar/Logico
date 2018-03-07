@@ -57,11 +57,8 @@ Variables are Lazily Evaluated
 (A v B)
 ```
 
-<br>
-<br>
-
 ## Examples
-> You can try this in the repl
+> You can try this in the REPL
 
 #### if ( (if A then B) and A ) then B 
 #### Prove that for Every value of A and B it Evaluates to T
