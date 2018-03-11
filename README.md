@@ -7,7 +7,7 @@
 > Currently in Beta
 ### `npm install -g logico` 
 After installation
-Execute `logico` in terminal and REPL will Start
+Type `logico` and press enter in the terminal and REPL will Start
 
 ## Introduction 
 
