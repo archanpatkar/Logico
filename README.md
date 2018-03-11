@@ -4,7 +4,10 @@
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
 
 ## Installation 
-### `npm install -g logico`
+> Currently in Beta
+### `npm install -g logico` 
+After installation
+Execute `logico` in terminal and REPL will Start
 
 ## Introduction 
 
