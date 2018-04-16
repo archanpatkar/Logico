@@ -14,6 +14,7 @@ type `logico` and press enter in the terminal and the REPL will Start
 ### `Propositional Calculus` or `zeroth-order logic`,
 Is a branch of logic concerned with the study of propositions (whether they are true or false) that are formed by other propositions with the use of logical connectives.
 
+## Fundamental Building Blocks (Values and Operators)
 
 ### Truth Values in Logico
 | Truth Value | Logico |
@@ -21,16 +22,16 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 | true        | T      |
 | false       | F      |
 
-
-### Logical Connectives in Logico
+### Logical Connectives (Operators) in Logico
 | Logical Connectives  	  | Operator 	| Equivalent in English       |
-|------------------------	|----------	|---------------------------	 |
+|------------------------	|----------	|---------------------------	|
 | Negation               	| -A       	| not A                       |
 | Conjunction            	| A ^ B    	| A and B                    	|
-| Disjunction            	| A v B    	| A or B                    	 |
+| Disjunction            	| A v B    	| A or B                    	|
 | Implication            	| A > B    	| if A then B                 |
 | Biconditional          	| A = B    	| A if and only if B          |
 
+## Expressions
 
 In Logico you can write Propsitional Expressions and Evaluate them
 ``` 
