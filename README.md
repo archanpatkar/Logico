@@ -1,4 +1,5 @@
 # Logico
+> An Educational Project
 ![node](https://img.shields.io/node/v/passport.svg?style=for-the-badge) ![apm](https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge)
 ### A Language based on [Propositional Calculus Ω](https://en.wikipedia.org/wiki/Propositional_calculus)
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
