@@ -60,6 +60,10 @@ Variables are Lazily Evaluated
 (B: (T ^ F = F ^ T))
 (A v B)
 ```
+## Nested Variable Definition Inference and Extraction
+
+In Logico you can Define a Variable inside a definition of another Variable as variables are 
+lazily evaluated 
 
 ## Examples
 > You can try this in the REPL
