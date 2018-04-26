@@ -5,9 +5,9 @@
 
 ## Installation 
 > This is an Educational Project and currently in beta
-### 1. `git clone https://github.com/archanpatkar/Logico.git`
-### 2. `cd Logico`
-### 3. `npm -g install` 
+#### 1. `git clone https://github.com/archanpatkar/Logico.git`
+#### 2. `cd Logico`
+#### 3. `npm -g install` 
 After installation
 type `logico` and press enter in the terminal and the REPL will Start
 
