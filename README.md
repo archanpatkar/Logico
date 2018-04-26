@@ -62,10 +62,11 @@ Variables are Lazily Evaluated
 (B: (T ^ F = F ^ T))
 (A v B)
 ```
-## Nested Variable Definition Inference and Extraction
-
-In Logico you can Define a Variable inside a definition of another Variable as variables are 
-lazily evaluated 
+## Memoization of Variables inside Variables (Thunking or Nullary Functions)
+Variable Defination inside of another variable defination is memoized (stored as a thunk) and partially evaluated as shown below
+```
+(B: -(A: T)) -> (B: -A) [A is defined and the expression partially evaluated]
+```
 
 ## Examples
 > You can try this in the REPL
