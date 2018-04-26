@@ -65,7 +65,7 @@ Variables are Lazily Evaluated
 ## Memoization of Variables inside Variables (Thunking or Nullary Functions)
 Variable Defination inside of another variable defination is memoized (stored as a thunk) and partially evaluated as shown below
 ```
-(B: -(A: T)) -> (B: -A) [A is defined and the expression partially evaluated]
+(B: -(A: T)) -> (B: -A) [A is defined and the expression is partially evaluated]
 ```
 
 ## Examples
