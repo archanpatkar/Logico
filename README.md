@@ -75,23 +75,15 @@ Variable Defination inside of another variable defination is memoized and expres
 #### Prove that for Every value of A and B it Evaluates to T
 
 ```
-( e: ( ( ( A > B ) ^ A ) > B ) )
-
-( ( A : T ) ( B : T ) )
-
-(e)
-
-( ( A : F ) ( B : T ) )
-
-(e)
-
-( ( A : T ) ( B : F ) )
-
-(e)
-
-( ( A : F ) ( B : F ) )
-
-(e)
+> ( e: ( ( ( A > B ) ^ A ) > B ) )
+> ( ( A : T ) ( B : T ) )
+> (e)
+> ( ( A : F ) ( B : T ) )
+> (e)
+> ( ( A : T ) ( B : F ) )
+> (e)
+> ( ( A : F ) ( B : F ) )
+> (e)
 ```
 
 ### This is an illustration of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
