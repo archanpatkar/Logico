@@ -72,7 +72,7 @@ Variable Defination inside of another variable defination is memoized and expres
 > You can try this in the REPL
 
 #### if ( (if A then B) and A ) then B 
-#### Prove that for Every value of A and B it Evaluates to T
+Prove that for Every value of A and B it Evaluates to T
 
 ```
 > ( e: ( ( ( A > B ) ^ A ) > B ) )
