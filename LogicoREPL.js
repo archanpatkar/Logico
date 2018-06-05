@@ -19,9 +19,9 @@ logico_cli.controller = function(input)
     {
         if(input != "")
         {
-            console.log(input);
-            console.log(parse(input));
-            console.log(eval(parse(input),env));
+            // console.log(input);
+            // console.log(parse(input));
+            // console.log(eval(parse(input),env));
             console.log(convert(eval(parse(input),env)));
         //    console.log(convert(eval(parse(),env)));
         }
