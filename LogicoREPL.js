@@ -8,7 +8,7 @@ const env = {};
 
 logico_cli.console = logico_cli.rl.createInterface(process.stdin, process.stdout,
     function(sub) {
-        return [['T', 'F', '-', '^', 'v', '>', '=', ':'], sub];
+        return [['T', 'F', '-', '^', 'v', '>', '=', ':','type exit to exit the REPL'], sub];
     }
 );
 
