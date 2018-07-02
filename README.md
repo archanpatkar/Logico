@@ -4,7 +4,7 @@
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
 
 ## Installation 
-> This is an Educational Project and currently in beta
+> This is an Educational Project and currently in Beta
 #### 1. `git clone https://github.com/archanpatkar/Logico.git`
 #### 2. `cd Logico`
 #### 3. `npm install -g` 
