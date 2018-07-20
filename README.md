@@ -63,7 +63,7 @@ Variables are Lazily Evaluated
 (A v B)
 ```
 ## Memoization of Variables
-Variable Defination inside of another variable defination is memoized and expression is partially evaluated as shown below
+Variable Definition inside of another variable definition is memoized and expression is partially evaluated as shown below
 ```
 (B: -(A: T)) -> (B: -A) [A is defined and will be lazily evaluated]
 ```
