@@ -55,7 +55,7 @@ You can also write multiple expressions inside an expression and the last expres
 Enclosing Expression will evaluate to `T`
 
 ## Variables 
-> Variables in Logico can be used as Propositional variables but are not limited to the atomic formulas of Propositional logic
+> Variables in Logico can be used as Propositional Variables but are not limited to the atomic formulas of propositional logic
 
 In Logico Variables can **store** Expressions and *Variables are Expressions*
 
