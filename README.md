@@ -1,5 +1,4 @@
 ## <img src="logico.png"/> 
-![node](https://img.shields.io/node/v/passport.svg?style=for-the-badge) ![apm](https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge)
 
 ### A Language based on [Propositional Calculus](https://en.wikipedia.org/wiki/Propositional_calculus)
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
@@ -72,6 +71,7 @@ Variable Definition inside of another variable definition is memoized and expres
 ```
 (B: -(A: T)) -> (B: -A) [A is defined and will be lazily evaluated]
 ```
+In some cases where the variable is already defined it will override the existing value
 
 ## Examples
 > You can try this in the REPL
