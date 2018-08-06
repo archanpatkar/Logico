@@ -71,7 +71,7 @@ Variable Definition inside of another variable definition is memoized and expres
 ```
 (B: -(A: T)) -> (B: -A) [A is defined and will be lazily evaluated]
 ```
-In some cases where the variable is already defined it will override the existing value
+`Note`:In some cases where the variable is already defined it will override the existing value
 
 ## Examples
 > You can try this in the REPL
