@@ -36,9 +36,9 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 | Implication            	| A > B    	| if A then B                 |
 | Biconditional          	| A = B    	| A if and only if B          |
 
-## Propositional Formula / Expressions or Propositions
+## Propositional Formulas / Expressions or Propositions
 
-In Logico you can write Propositional Expressions of both **Simple** and **Compound** types and Evaluate them. Logico syntax is compatible with Well-formed formula(wff) Formal Grammer
+In Logico you can write Propositional Expressions of both **Simple** and **Compound** types and Evaluate them. Logico syntax is compatible with Well-formed formula(WFF) Formal Grammer of **Propositional Calculus**
 ``` 
 ( ( -(T ^ F) v (-F) ) ^ F ) 
 ``` 
