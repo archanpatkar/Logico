@@ -27,6 +27,7 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 
 ### Logical Connectives (Operators) in Logico
 > Both Unary and Dyadic Connectives are Available
+
 | Logical Connectives  	  | Operator 	| Natural Language            |
 |------------------------	|----------	|---------------------------	|
 | Negation               	| -A       	| not A                       |
