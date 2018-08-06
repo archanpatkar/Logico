@@ -26,7 +26,8 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 | false       | F      |
 
 ### Logical Connectives (Operators) in Logico
-| Logical Connectives  	  | Operator 	| Equivalent in English       |
+> Both Unary and Dyadic Connectives are Available
+| Logical Connectives  	  | Operator 	| Natural Language            |
 |------------------------	|----------	|---------------------------	|
 | Negation               	| -A       	| not A                       |
 | Conjunction            	| A ^ B    	| A and B                    	|
