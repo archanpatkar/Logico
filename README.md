@@ -1,5 +1,6 @@
 ## <img src="logico.png"/> 
 ![node](https://img.shields.io/node/v/passport.svg?style=for-the-badge) ![apm](https://img.shields.io/apm/l/vim-mode.svg?style=for-the-badge)
+
 ### A Language based on [Propositional Calculus](https://en.wikipedia.org/wiki/Propositional_calculus)
 ### It supports [Expression Oriented Programming](https://en.wikipedia.org/wiki/Expression-oriented_programming_language)
 ### It has non-strict semantics or `"Lazy"` Evaluation
@@ -36,9 +37,9 @@ Is a branch of logic concerned with the study of propositions (whether they are 
 | Implication            	| A > B    	| if A then B                 |
 | Biconditional          	| A = B    	| A if and only if B          |
 
-## Expressions
+## Propositional Formula / Expressions or Propositions
 
-In Logico you can write Propositional Expressions and Evaluate them
+In Logico you can write Propositional Expressions of both **Simple** and **Compound** types and Evaluate them. Logico syntax is compatible with Well-formed formula(wff) Formal Grammer
 ``` 
 ( ( -(T ^ F) v (-F) ) ^ F ) 
 ``` 
