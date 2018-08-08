@@ -63,7 +63,7 @@ Variables are Lazily Evaluated
 
 ```
 (A: T)
-(B: (T ^ F = F ^ T))
+(B: ( (T ^ F) = (F ^ T) ) )
 (A v B)
 ```
 ## Parsing Optimization ( Memoization of Variables )
