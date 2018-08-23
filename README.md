@@ -94,8 +94,7 @@ Prove that for Every value of A and B it Evaluates to T
 ### This is an illustration of [Tautology](https://en.wikipedia.org/wiki/Tautology_(logic))
 
 
-## Resources
-For Learning Propostional Calculus
+## Sources
 
 [Wiki](https://en.wikipedia.org/wiki/Propositional_calculus)<br>
 [Introduction](https://www.tutorialspoint.com/discrete_mathematics/discrete_mathematics_propositional_logic.htm)<br>
